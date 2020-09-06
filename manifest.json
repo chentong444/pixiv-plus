@@ -4,7 +4,7 @@
    },
    "content_scripts": [ {
       "js": [ "myjs.js" ],
-      "matches": [ "*://www.pixiv.net/member_illust.php?*" ],
+      "matches": [ "*://www.pixiv.net/artworks/*", "*://www.pixivision.net/*", "*://www.pixiv.net/ranking.php?mode=daily*" ],
       "run_at": "document_end"
    } ],
    "description": "Additional functions of Pixiv",
@@ -19,6 +19,6 @@
    "name": "Pixiv Plus",
    "permissions": [ "contextMenus", "downloads", "webRequest", "storage", "webRequestBlocking", "*://www.pixiv.net/*", "*://i.pximg.net/*" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.06",
+   "version": "2.1",
    "web_accessible_resources": [ "images/*.png" ]
 }
